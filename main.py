@@ -89,7 +89,7 @@ def show_preprocessing():
              "6. **Displayed results**: Finally, the processed data and information about missing "
              "values have been presented.\n\n")
 
-    st.markdown("### We can include df.head() here.")
+    st.image("img/df.jpg", width=800)
 
     st.markdown("### Describe data from df")
 
