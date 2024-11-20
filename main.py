@@ -141,7 +141,24 @@ def show_models():
 
 def show_conclusions():
     st.title("Conclusions")
-    st.write("In this section, we will summarize the main findings of the project.")
+
+    st.image("img/sprout.jpg", width=800)
+
+    st.write("""
+        In our application, we have conducted forecasts of car CO2 emissions. The goal of the project is to enable 
+        users to easily analyze emissions data and predict the environmental impact of new car models.
+
+        Detailed visualizations, including histograms and charts, allow for the examination of emission 
+        distribution and the identification of key trends in the data.
+
+        The dataset contains a significant number of records and features, providing a comprehensive overview 
+        of CO2 emission trends in the automotive industry.
+
+        Our application is designed to support environmentally responsible practices in the automotive 
+        industry by providing a tool for analyzing and forecasting CO2 emissions. 
+        We believe that this application can become an integral part of the design and marketing processes 
+        for vehicles striving to minimize their environmental footprint.
+        """)
 
 
 # Main application function
