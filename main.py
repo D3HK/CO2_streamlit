@@ -4,7 +4,7 @@ from models import regression, classification, nn_regression, nn_classification,
 
 def show_introduction():
     st.title("CO2 Emissions Project")
-    st.write("111Climate change is one of the most pressing environmental issues facing humanity in the 21st century. "
+    st.write("Climate change is one of the most pressing environmental issues facing humanity in the 21st century. "
              "It is driven by the increased concentration of greenhouse gases in the atmosphere, "
              "primarily carbon dioxide (CO2), which is generated from the burning of fossil fuels such as coal, oil, "
              "and natural gas. These emissions contribute to the greenhouse effect, which leads to global warming. "
