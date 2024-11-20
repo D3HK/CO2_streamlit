@@ -91,7 +91,20 @@ def show_preprocessing():
 
     st.image("img/df.jpg", width=800)
 
-    st.markdown("### Describe data from df")
+    st.markdown(
+        """
+        ### Describe data
+            - m (kg) - Mass in running order. Completed/complete vehicle.
+            - Ewltp (g/km) - Specific CO2 Emissions (WLTP).
+            - W (mm) - Wheel Base.
+            - At1 (mm) - Axle width steering axle.
+            - ec (cm3) - Engine capacity.
+            - ep (KW) - Engine power.
+            - z (Wh/km) - Electric energy consumption.
+            - Fuel consumption - Fuel consumption.
+            - Electric range (km) - Electric range (km).
+        """
+    )
 
 
 def show_models():
