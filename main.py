@@ -87,9 +87,11 @@ def show_preprocessing():
              "into a single dataset for further analysis.\n\n"
 
              "6. **Displayed results**: Finally, the processed data and information about missing "
-             "values have been presented.\n\n"
+             "values have been presented.\n\n")
 
-             "### !!! We can include df.head() here. !!!")
+    st.markdown("### We can include df.head() here.")
+
+    st.markdown("### Describe data from df")
 
 
 def show_models():
