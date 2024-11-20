@@ -97,7 +97,7 @@ def show_preprocessing():
             - m (kg) - Mass in running order. Completed/complete vehicle.
             - Ewltp (g/km) - Specific CO2 Emissions (WLTP).
             - W (mm) - Wheel Base.
-            - At1 (mm) - Axle width steering axle.
+            - At1 (mm) - Width steering axle.
             - ec (cm3) - Engine capacity.
             - ep (KW) - Engine power.
             - z (Wh/km) - Electric energy consumption.
