@@ -26,11 +26,27 @@ def show_regression_models():
         These results confirm the high effectiveness of the XGBoost model in predicting CO2 emissions and its capability 
         to provide precise analysis, which is a significant contribution to the project focused on assessing the 
         environmental impact of vehicles.
+        
+        graphs: Predicted vs. Actual Scatter Plot, Learning Curves
         """)
 
     elif regression_model == "KNeighbors":
         st.markdown("""
         ### KNeighbors Regressor
+        
+        The K-Nearest Neighbors (KNN) Regressor model was applied to predict CO2 emissions, specifically targeting the 
+        'Ewltp (g/km)' output variable. Initially, the dataset was split into training and testing sets with an 80-20 
+        ratio. Data normalization was conducted using a StandardScaler to ensure that all features contribute equally 
+        to the distance calculations in the KNN algorithm. The KNN regressor was configured with 2 neighbors, 
+        learning from the normalized training data.
+
+        The model demonstrated excellent performance, achieving a training score of 0.9951 and a testing score of 0.9846. 
+        These high R-squared values indicate that the model has successfully captured the variability in the data, 
+        providing accurate predictions on unseen data. The slight drop in performance from training to test sets 
+        suggests a well-balanced model with minimal overfitting, indicating its robustness and reliability in predicting 
+        CO2 emissions based on the features provided.
+        
+        graphs: Scatter Plot, Residuals Plot, Correlation Matrix.
         """)
 
     elif regression_model == "Random Forest":
