@@ -1,4 +1,5 @@
 import streamlit as st
+
 from models import regression, classification, nn_regression, nn_classification, shap
 
 
@@ -52,10 +53,8 @@ def show_dataset():
              "make and commercial name, specific emissions of CO2 (NEDC and WLTP protocols), masses of the vehicle, "
              "wheel base, track width, engine capacity and power, fuel type and mode, eco-innovations and electricity "
              "consumption.")
-    st.image(
-        "img/car_exhaust.jpg",
-        width=800
-    )
+
+    st.image("img/car_exhaust.jpg", width=800)
 
 
 def show_preprocessing():
@@ -112,7 +111,6 @@ def show_models():
 
     st.image("img/brain.jpg", width=800)
 
-    # Tabs
     tab1, tab2, tab3, tab4, tab5 = st.tabs(
         [
             "Regression Models",
@@ -161,17 +159,13 @@ def show_conclusions():
         """)
 
 
-# Main application function
 def main():
-    # Set page configuration
     st.set_page_config(page_title="CO2 Emissions Project", page_icon="🌍", layout="wide")
 
-    # Sidebar menu for page selection
     page = st.sidebar.radio(
         "Main menu", ["Introduction", "Dataset", "Preprocessing", "Models & Predictions", "Conclusions"]
     )
 
-    # Call the corresponding function based on the selected page
     if page == "Introduction":
         show_introduction()
     elif page == "Dataset":
