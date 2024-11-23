@@ -1,6 +1,6 @@
 import streamlit as st
 
-from models import regression, classification, nn_regression, nn_classification, shap
+from models import regression, classification, neural_network, shap
 
 
 def show_introduction():
@@ -111,12 +111,11 @@ def show_models():
 
     st.image("img/brain.jpg", width=800)
 
-    tab1, tab2, tab3, tab4, tab5 = st.tabs(
+    tab1, tab2, tab3, tab4 = st.tabs(
         [
             "Regression Models",
             "Classification Models",
-            "NN Regression Models",
-            "NN Classification Models",
+            "Neural Network",
             "SHAP Explanations"
         ]
     )
@@ -128,12 +127,9 @@ def show_models():
         classification.show_classification_models()
 
     with tab3:
-        nn_regression.show_nn_regression_models()
+        neural_network.show_neural_network()
 
     with tab4:
-        nn_classification.show_nn_classification_models()
-
-    with tab5:
         shap.show_shap()
 
 
