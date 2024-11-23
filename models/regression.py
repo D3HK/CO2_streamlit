@@ -5,9 +5,15 @@ def show_regression_models():
     st.header("Select a Regression Model")
 
     regression_model = st.radio("Choose a regression model:",
-                                ["XGBoost", "KNeighbors", "Random Forest",
-                                 "LightGBM", "Linear Regression",
-                                 "Decision Tree", "Support Vector Regression"])
+                                [
+                                    "XGBoost",
+                                    "KNeighbors",
+                                    "Random Forest",
+                                    "LightGBM",
+                                    "Linear Regression",
+                                    "Decision Tree",
+                                    "Support Vector Regression"
+                                ])
 
     if regression_model == "XGBoost":
         st.markdown("""
@@ -152,4 +158,3 @@ def show_regression_models():
 
         graphs: Predicted vs. Actual Values Scatter Plot, Residuals Plot, Error Distribution Histogram.
         """)
-
