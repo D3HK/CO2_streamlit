@@ -216,6 +216,4 @@ def show_regression_models():
         Additionally, the score of the SVR model on both training and test datasets is consistent, with values of 
         approximately 0.962 and 0.963, respectively. This consistency suggests that the model has captured the 
         underlying patterns of the training data well and generalizes effectively to unseen data without overfitting.
-
-        graphs: Predicted vs. Actual Values Scatter Plot, Residuals Plot, Error Distribution Histogram.
         """)
