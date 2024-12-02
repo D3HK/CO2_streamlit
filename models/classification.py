@@ -27,9 +27,15 @@ def show_classification_models():
         The counts on the diagonal represent correct predictions, indicating a large number of accurately classified 
         instances across all emission categories. However, there are some confusions observed, especially between the 
         'low' and 'high' emission categories, which could be due to overlapping characteristics in the feature space.
-
-        graphs: confusion matrix heatmap
         """)
+
+        st.header("Graph", divider="green")
+
+        st.image(
+            "img/graphs/log-reg-classifier.png",
+            caption="Confusion matrix heatmap",
+        )
+
     elif classification_model == "Random Forest Classifier":
         st.markdown("""
         ### Random Forest Classifier
@@ -43,4 +49,11 @@ def show_classification_models():
         is effectively classifying CO2 emission levels with minimal error rates. The confusion matrix reflects 
         a low number of misclassifications, reinforcing the model's robustness in categorizing the data accurately.
         """)
+
+        st.header("Graph", divider="green")
+
+        st.image(
+            "img/graphs/rfclassifier.png",
+            caption="Confusion matrix heatmap",
+        )
 
