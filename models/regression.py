@@ -32,9 +32,19 @@ def show_regression_models():
         These results confirm the high effectiveness of the XGBoost model in predicting CO2 emissions and its capability 
         to provide precise analysis, which is a significant contribution to the project focused on assessing the 
         environmental impact of vehicles.
-        
-        graphs: Predicted vs. Actual Scatter Plot, Learning Curves
         """)
+
+        st.header("Graphs", divider="green")
+
+        st.image(
+            "img/graphs/xgboost1.png",
+            caption="Predicted vs. Actual",
+        )
+
+        st.image(
+            "img/graphs/xgboost2.png",
+            caption="Learning Curves",
+        )
 
     elif regression_model == "KNeighbors":
         st.markdown("""
@@ -51,9 +61,19 @@ def show_regression_models():
         providing accurate predictions on unseen data. The slight drop in performance from training to test sets 
         suggests a well-balanced model with minimal overfitting, indicating its robustness and reliability in predicting 
         CO2 emissions based on the features provided.
-        
-        graphs: Scatter Plot, Residuals Plot, Correlation Matrix.
         """)
+
+        st.header("Graphs", divider="green")
+
+        st.image(
+            "img/graphs/knn1.png",
+            caption="Predicted vs. Actual",
+        )
+
+        st.image(
+            "img/graphs/knn2.png",
+            caption="Learning Curves",
+        )
 
     elif regression_model == "Random Forest":
         st.markdown("""
@@ -70,9 +90,19 @@ def show_regression_models():
         The model also shows a high training score of 0.998, suggesting excellent fit on the training data without 
         significant overfitting on the test data. These results demonstrate the model's robust predictive capability 
         and its effectiveness in capturing the underlying patterns related to CO2 emissions.
-        
-        graphs: Feature Importance Bar Plot, Residuals Plot, Actual vs. Predicted Values Scatter Plot.
         """)
+
+        st.header("Graphs", divider="green")
+
+        st.image(
+            "img/graphs/rfr1.png",
+            caption="Predicted vs. Actual",
+        )
+
+        st.image(
+            "img/graphs/rfr2.png",
+            caption="Learning Curves",
+        )
 
     elif regression_model == "LightGBM":
         st.markdown("""
@@ -92,9 +122,19 @@ def show_regression_models():
         Furthermore, the training score of the model was 0.9827, and the testing score was 0.9811, signifying that 
         the model generalizes well and does not overfit the training data. The relatively close training and testing 
         scores demonstrate the model's stability and reliability in predicting CO2 emissions across unseen data.
-
-        graphs: Feature Importance chart, Residual Plot, Predicted vs. Actual Values plot.
         """)
+
+        st.header("Graphs", divider="green")
+
+        st.image(
+            "img/graphs/gbm1.png",
+            caption="Predicted vs. Actual",
+        )
+
+        st.image(
+            "img/graphs/gbm2.png",
+            caption="Learning Curves",
+        )
 
     elif regression_model == "Linear Regression":
         st.markdown("""
@@ -112,8 +152,19 @@ def show_regression_models():
         predicted and actual values. The R-squared value was approximately 0.957, suggesting that the model explains 
         around 95.7% of the variance in the target variable. Additionally, the training set score was 0.954, and the 
         testing set score was 0.957, illustrating that the model generalizes well to unseen data.
-
         """)
+
+        st.header("Graphs", divider="green")
+
+        st.image(
+            "img/graphs/linear_regression1.png",
+            caption="Predicted vs. Actual",
+        )
+
+        st.image(
+            "img/graphs/linear_regression2.png",
+            caption="Learning Curves",
+        )
 
     elif regression_model == "Decision Tree":
         st.markdown("""
@@ -134,9 +185,19 @@ def show_regression_models():
         imply overfitting as the model performs slightly less well on the testing data (Score_Test: 0.9863). 
         This signifies that although the model is highly accurate on the data it was trained on, its predictive 
         performance slightly decreases when faced with new, unseen data.
-
-        graphs: Feature Importance Plot, Decision Tree Diagram, Residuals Plot.
         """)
+
+        st.header("Graphs", divider="green")
+
+        st.image(
+            "img/graphs/dt1.png",
+            caption="Predicted vs. Actual",
+        )
+
+        st.image(
+            "img/graphs/dt2.png",
+            caption="Learning Curves",
+        )
 
     elif regression_model == "Support Vector Regression":
         st.markdown("""
