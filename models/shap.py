@@ -32,3 +32,15 @@ def show_shap():
     In all these cases, SHAP enhances model interpretability by showing which features contribute the most to variations 
     in predictions, allowing us to gain deeper insights into how the model makes decisions.
     """)
+
+    st.header("Graphs", divider="green")
+
+    st.image(
+        "img/graphs/shap_fnn.png",
+        caption="SHAP FNN",
+    )
+
+    st.image(
+        "img/graphs/shap_xgb.png",
+        caption="SHAP XGB",
+    )
