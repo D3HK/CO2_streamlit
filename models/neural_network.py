@@ -26,8 +26,6 @@ def show_neural_network():
         Evaluating the model's performance showed that it achieved a validation loss of 1210.126 and a validation MAE 
         of 30.1204 by the 20th epoch. This demonstrates the model's capacity to learn from the data and make relatively 
         accurate predictions about CO2 emissions, although there is still room for improvement.
-        
-        graphs: Actual vs. Predicted CO2 Emissions Scatter Plot
         """)
 
     elif neural_network == "Multi-class classification":
@@ -50,7 +48,10 @@ def show_neural_network():
         report metrics such as precision, recall, and F1-score demonstrating consistent and reliable predictions. 
         For example, the F1-score for the 'high' category was particularly impressive, showcasing the model's ability 
         to correctly classify the majority category.
-        
-        graphs: Confusion Matrix
         """)
+
+        st.image(
+            "img/graphs/multi_class.png",
+            caption="Confusion matrix heatmap",
+        )
 
